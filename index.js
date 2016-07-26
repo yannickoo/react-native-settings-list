@@ -119,7 +119,7 @@ class SettingsList extends React.Component {
                 onValueChange={(value) => item.switchOnValueChange(value)}
                 value={item.switchState}/>
                 : null}
-            {item.hasNavArrow ? <Image style={[styles.rightSideStyle, item.arrowStyle]} source={ARROW_ICON} /> : null}
+            {item.hasNavArrow ? <View style={styles.rightSideStyle}>{item.arrow}</View> : null}
           </View>
         </View>
       </TouchableHighlight>
